@@ -17,7 +17,5 @@
 </ul>
 <h3>Course 2B: Case Study Python For Data Analysis</h3>
 <ul>
-  <li></li>
-  <li></li>
-  <li></li>
+  <li><a href="Course2B_Python_Data_analysis/Course2B_USC_6.ipynb">Python For Data Analysis</a></li>
 </ul>
