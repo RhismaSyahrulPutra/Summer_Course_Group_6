@@ -1,0 +1,80 @@
+<!doctype html>
+<html lang="en">
+<head>
+    <meta charset="utf-8">
+    <title>Waste Generation Data</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            background-color: #f4f4f4;
+            margin: 0;
+            padding: 0;
+        }
+        header {
+            background-color: #007bff;
+            color: white;
+            padding: 1em 0;
+            text-align: center;
+            margin-bottom: 2em;
+        }
+        main {
+            max-width: 900px;
+            margin: 0 auto;
+            background-color: white;
+            padding: 2em;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+        }
+        h1, h2 {
+            color: #333;
+            text-align: center;
+        }
+        h2 {
+            color: #007bff;
+            margin-top: 0.5em; /* Adjusted margin */
+        }
+        img {
+            max-width: 100%;
+            height: auto;
+            display: block;
+            margin: 0.5em 0; /* Adjusted margin */
+        }
+        .data-table {
+            width: 100%;
+            border-collapse: collapse;
+            margin: 1em 0;
+        }
+        .data-table th, .data-table td {
+            border: 1px solid #ddd;
+            padding: 0.75em;
+            text-align: left;
+        }
+        .data-table th {
+            background-color: #f8f8f8;
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <h1>Waste Generation Data Visualization</h1>
+    </header>
+    <main>
+        <h2>Total Amount of Annual Waste Generation in Each Province in Each Year</h2>
+        <img src="/plots/total_amount_each_year.png" alt="Total Annual Waste">
+
+        <h2>Average Total Annual Waste Generation in Each Province for All Years</h2>
+        <img src="/plots/avg_total_all_years.png" alt="Total Annual Waste">
+
+        <h2>Province Produces the Most Annual Waste Generation Each Year</h2>
+        {{ most_annual | safe }}
+
+        <h2>Province Produces the Least Annual Waste Generation Each Year</h2>
+        {{ least_annual | safe }}
+
+        <h2>Total Annual Amount of Waste in Each Province from Year to Year</h2>
+        <img src="/plots/total_annual_amount.png" alt="Total Annual Waste">
+
+        <h2>Average Incidence Annual Waste in Each Province for The Entire Year</h2>
+        <img src="/plots/categorized_provinces.png" alt="Categorized Waste">
+    </main>
+</body>
+</html>
