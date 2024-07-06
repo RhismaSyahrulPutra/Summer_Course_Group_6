@@ -21,5 +21,5 @@
 </ul>
 <h3>Course 4B: Assignment - Deep Learning for Computer Vision</h3>
 <ul>
-  <li><a href="Course2B_Python_Data_analysis/Course2B_USC_6.ipynb">Python For Data Analysis</a></li>
+  <li><a href="Course 4B Assignment - Deep Learning for Computer Vision/Course4B.ipynb">Deep Learning for Computer Vision</a></li>
 </ul>
